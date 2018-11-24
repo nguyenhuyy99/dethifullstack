@@ -1,0 +1,140 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	section.home-banner
+		.owl-carousel.owl-theme
+			.banner
+				img(src="img/banner_slider.png", alt="")
+				.container
+					.row
+						.col-sm-6.text-banner
+								h2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda, est labore accusamus officiis pariatur illo error! Animi explicabo nam qui culpa voluptatem. Nisi aliquam id corrupti sapiente sequi odit!
+								.btn-click CLICK HERE
+			.banner
+				img(src="img/banner_slider.png", alt="")
+				.container
+					.row
+						.col-sm-6.text-banner
+								h2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda, est labore accusamus officiis pariatur illo error! Animi explicabo nam qui culpa voluptatem. Nisi aliquam id corrupti sapiente sequi odit!
+								.btn-click CLICK HERE
+			.banner
+				img(src="img/banner_slider.png", alt="")
+				.container
+					.row
+						.col-sm-6.text-banner
+								h2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda, est labore accusamus officiis pariatur illo error! Animi explicabo nam qui culpa voluptatem. Nisi aliquam id corrupti sapiente sequi odit!
+								.btn-click CLICK HERE
+	section.home-services
+		.container
+			.row
+				.col-sm-6.text-center
+					span.title WHY 
+						span.text-color CHOOSE US 
+						span.line
+					p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium inventore quae maiores neque, laboriosam, 
+
+			.row
+				.col-sm-4.services-logo
+					a(href="#")
+						img(src="img/logo_01.png", alt="")
+					br
+					h3 FULLSTACK VIETNAM!
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quia. Vero aspernatur animi, sapiente temporibus dolore in
+				.col-sm-4.services-logo
+					a(href="#")
+						img(src="img/logo_02.png", alt="")
+					h3 FULLSTACK VIETNAM!
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quia. Vero aspernatur animi, sapiente temporibus dolore in
+				.col-sm-4.services-logo
+					a(href="#")
+						img(src="img/logo_03.png", alt="")
+					h3 FULLSTACK VIETNAM!
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quia. Vero aspernatur animi, sapiente temporibus dolore in
+	section.home-info
+		.container.box-scrollbar
+			.row
+				.col-md-6.box-sroll
+					span.title WHY 
+						span.text-color CHOOSE US 
+						span.line
+					h3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic molestiae sit repellendus voluptatibus magni quam repudiandae. 
+					p Lorem, ipsum dolor sit amet consectetur adipisicing elit. In vel iste tenetur amet impedit veritatis? 
+					p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus non rem quam, corporis, qui cum ullam magnam hic velit, culpa repellendus officiis alias nulla praesentium inventore? Optio repudiandae animi minus?
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate dolore
+					.btn-click CLICK HERE
+				.col-md-6.text-scrollbar
+					.scrollbar
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptas vitae aspernatur quidem, perferendis voluptate eum maiores itaque voluptatum fugit delectus iusto accusamus ex, impedit dolor soluta nemo eveniet totam.
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nulla consequuntur alias voluptates? Expedita asperiores itaque placeat. Natus accusamus minima voluptates atque fugit. Eum asperiores dolorum, dicta quo mollitia beatae?
+						p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet beatae hic neque laboriosam, nemo modi doloremque ipsum dolores, in suscipit quidem recusandae nostrum magnam vero. Iure sequi nulla blanditiis voluptate.
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nam totam laboriosam. Quisquam aperiam repellat alias voluptatum temporibus eveniet consequatur ipsum quod vero, aspernatur eum ipsa eligendi impedit voluptas! Voluptate!
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia incidunt tenetur hic pariatur veritatis? Quos, ex? Quae eveniet laboriosam mollitia temporibus, assumenda, praesentium aut ipsa, error ut quos debitis totam!
+							.force-overflow
+	section.home-feedback
+		.container
+			.row.fb-1
+				.col-sm-6.text-fb-01
+					h3 FEED BACK
+						span.line
+					p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, sunt? Necessitatibus distinctio tempore non harum
+			.row
+				.col-sm-3.fb-2
+					figure
+						img.rounded-circle(src="img/avatar_02.png", alt="").img-fluid
+						figcaption
+							h4 Fullstack Vietnam
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				.col-sm-3.fb-2
+					figure
+						img.rounded-circle(src="img/avatar_02.png", alt="").img-fluid
+						figcaption
+							h4 Fullstack Vietnam
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				.col-sm-3.fb-2
+					figure
+						img.rounded-circle(src="img/avatar_02.png", alt="").img-fluid
+						figcaption
+							h4 Fullstack Vietnam
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				.col-sm-3.fb-2
+					figure
+						img.rounded-circle(src="img/avatar_02.png", alt="").img-fluid
+						figcaption
+							h4 Fullstack Vietnam
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+	section.home-bonus
+		.container
+			.row
+				.col-sm-6
+					img(src="img/img_bonus.png", alt="").img-fluid
+				.col-sm-6.moving
+					.row.title-moving
+						.col
+							h3 MOVING
+								span.line
+							p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, facere quia? Rerum praesentium voluptatum porro
+					.row.icon
+						.col.sm-2
+							img(src="img/airplane.png", alt="")
+						.col-sm-10
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit officia vel, sit in ex aperiam git officia vel, sit in ex aperiam
+					.row.icon
+						.col.sm-2
+							img(src="img/train.png", alt="")
+						.col-sm-10
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit officia vel, sit in ex aperiam git officia vel, sit in ex aperiam
+					.row.icon
+						.col.sm-2
+							img(src="img/taxi.png", alt="")
+						.col-sm-10
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit officia vel, sit in ex aperiam git officia vel, sit in ex aperiam

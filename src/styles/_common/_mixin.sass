@@ -1,0 +1,27 @@
+// Các Mixin viết vào đây
+=scroll-bar()
+	&::-webkit-scrollbar
+		width: 10px
+		margin-top: 20px
+		
+
+	&::-webkit-scrollbar-track
+		box-shadow: inset 5px 5px 5px 5px grey
+		
+		border-radius: 20px
+
+	&::-webkit-scrollbar-thumb
+		background: #f4c93e
+		border-radius: 10px
+		overflow: hidden
+		&:hover
+			background: yellow
+=bg-overlay($color: #000,$level: 0.5)
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	display: block
+	content: ''
+	background: rgba($color,$level)

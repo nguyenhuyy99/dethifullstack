@@ -1,0 +1,57 @@
+header
+	background: rgba(#000,0.3)
+	.navbar
+		+pad(null 0)
+	.navbar-brand
+		img 
+			max-height: 2rem
+	+media-breakpoint-up(md)
+		.navbar-brand
+			img 
+				max-height: 3rem
+	position: fixed
+	z-index: 9999
+	width: 100%
+	&.active
+		background: rgba(#000,0.3)
+	
+	nav
+		.navbar-brand
+			img
+		.navbar-nav
+			list-style-type: none
+			+pos(abs,null null null 50%)
+			transform: translateX(-50%)
+			z-index: 99
+			.nav-item
+				text-transform: uppercase
+				text-align: center
+				display: flex
+				justify-content: center
+				width: 100vw
+				font-weight: bold
+				border-radius: 1rem
+				&.active
+					background: #f2c73e
+					.nav-link
+						color: #000
+				&:hover
+					background: #f2c73e
+					.nav-link
+						color: #000
+				.nav-link
+					font-size: 1.2rem
+					text-decoration: none
+					color: #fff
+	+media-breakpoint-up(sm)
+		nav
+			.navbar-brand
+				img
+			.navbar-nav
+				+pos(abs,null null null 80%)
+				transform: translateX(-50%)
+				.nav-item
+					width: 8rem
+					height: 2.5rem
+					.nav-link
+						font-size: 1rem

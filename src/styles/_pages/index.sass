@@ -1,0 +1,259 @@
+.home-banner
+	.owl-carousel
+		.owl-navs
+		.banner
+			img
+				max-width: 100%
+				position: relative
+				filter: grayscale(100%)
+			.text-banner
+				h2
+					font-size: 1.5rem
+					text-align: center
+				.btn-click
+					padding: 1rem
+					background: $sun-flower
+					font-weight: bold
+					text-align: center
+					border-radius: 3rem
+					cursor: pointer
+	+media-breakpoint-up(sm)
+		.owl-carousel
+			.owl-dots
+				+pos(abs, null null 0 50%)
+				transform: translateX(-50%)
+				margin-bottom: 3rem
+				.owl-dot
+					&.active
+						span
+							background: none
+							background: $sun-flower
+							border: 3px $sun-flower solid
+							&:hover
+								background: none
+								border: 3px $sun-flower solid
+			img
+			.text-banner
+				+pos(abs, null null 0 25%)
+				color: white
+				text-align: center
+				width: 100%
+				height: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+				flex-direction: column
+				margin: auto
+				h2
+					font-size: 3rem
+			.btn-click
+				color: black
+				width: 150px
+				border-radius: 2rem	
+.home-services
+	background: url('../img/banner_services.png') no-repeat center center
+	background-size: cover
+	min-height: 600px
+	.text-center
+		width: 100%
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: auto
+		flex-direction: column
+		padding-top: 1rem
+		margin-bottom: 1rem
+		.title
+			font-size: 1.5rem
+			color: $sun-flower
+			font-weight: bold
+			position: relative
+			padding: 0.5rem
+			.text-color
+				color: black
+			.line
+				display: inline-block
+				height: 4px
+				width: 80px
+				background: $sun-flower
+				position: absolute
+				bottom: 0
+				left: 50%
+				transform: translateX(-50%)
+		p
+			padding: 1rem
+			color: $asbestos
+	.services-logo
+		align-items: center
+		display: flex
+		justify-content: center
+		text-emphasis: center
+		flex-direction: column
+		a
+			img
+				margin-bottom: 2rem
+				filter: grayscale(100%)
+		h3
+			font-weight: bold
+		p
+			margin-bottom: 2rem	
+			color: $asbestos
+	+media-breakpoint-up(sm)
+		.text-center
+			padding-top: 7rem
+			.title
+				font-size: 3rem
+				color: $sun-flower
+				font-weight: bold
+				position: relative
+				padding: 0.5rem
+				margin-bottom: 2rem
+.home-info
+	background: url('../img/banner_intro.png') no-repeat center center
+	background-size: cover
+	min-height: 600px
+	.box-scrollbar
+		padding-top: 8rem
+		.box-sroll
+			.title
+				font-size: 1.5rem
+				color: $sun-flower
+				font-weight: bold
+				position: relative
+				padding-bottom: 0.5rem
+				.text-color
+					color: white
+				.line
+					display: inline-block
+					height: 4px
+					width: 80px
+					background: $sun-flower
+					position: absolute
+					bottom: 0
+					left: 0
+			h3
+				color: white
+				padding-top: 1rem
+			p
+				color: $silver
+			.btn-click
+				padding: 1rem
+				background: $sun-flower
+				font-weight: bold
+				text-align: center
+				border-radius: 3rem
+				cursor: pointer
+				width: 150px
+				
+		.text-scrollbar
+			+mar(0.5rem null 4rem null )
+			border: 3px solid $sun-flower
+			width: 100%
+			height: 25rem
+			color: $silver
+			border-radius: 15px
+			+pad(1rem 2rem 1rem 3rem)
+			&:before
+				+bg-overlay(#fff,0.2)
+			.scrollbar
+				height: 100%
+				overflow-y: scroll
+				position: relative
+				margin: 0 auto
+				+scroll-bar
+	+media-breakpoint-down(sm)
+		.box-scrollbar
+			padding-top: 1rem
+			.box-sroll
+				.btn-click
+					display: block
+					margin-left: auto
+					margin-right: auto
+.home-feedback
+	margin-top: 2rem
+	background: $sun-flower
+	min-height: 600px
+	background-size: cover
+	.fb-1
+		margin-bottom: 4rem
+		.text-fb-01
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-direction: column
+			text-align: center
+			margin: auto
+			margin-top: 7rem
+			h3
+				margin-bottom: 2rem
+				font-weight: bold
+				.line
+					display: inline-block
+					height: 4px
+					width: 80px
+					background: #aa8b0d
+					position: absolute
+					bottom: 60%
+					left: 50%
+					transform: translateX(-50%)
+			p
+				font-weight: bold
+	.fb-2
+		figure
+			img
+				margin-bottom: 2rem	
+				width: 80%
+				display: block
+				margin-left: auto
+				margin-right: auto
+			figcaption
+				padding-bottom: 3rem
+				text-align: center
+				h4
+					font-weight: bold
+					&:hover 
+						color: white
+.home-bonus
+	margin-top: 2rem
+	img
+		filter: grayscale(100%)
+		max-width: 100%
+	.moving
+		.title-moving
+			margin-bottom: 2rem
+			h3
+				font-weight: bold
+				text-align: center
+				margin-bottom: 2rem
+				span
+					display: inline-block
+					height: 4px
+					width: 80px
+					background: $sun-flower
+					position: absolute
+					bottom: 60%
+					left: 50%
+					transform: translateX(-50%)
+			p 
+				text-align: center
+				color: $brown-black
+				font-weight: bold
+		.icon
+			margin-bottom: 3rem
+			img
+				max-width: 150%
+			p
+				align-items: center
+				display: flex
+				justify-content: center
+				padding-top: 1rem
+				padding-left: 1rem
+	+media-breakpoint-down(sm)
+		img
+			display: block
+			margin-left: auto
+			margin-right: auto
+		.moving
+			margin-top: 2rem
+		
