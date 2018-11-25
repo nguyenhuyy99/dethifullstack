@@ -1,6 +1,22 @@
 .home-banner
 	.owl-carousel
-		.owl-navs
+		.owl-nav
+			.owl-prev
+				span
+					background: $sun-flower
+					padding: 0.5rem
+					color: white
+					font-size: 2rem
+					padding-left: 1.5rem
+					padding-right: 1.5rem
+			.owl-next
+				span
+					background: $sun-flower
+					padding: 0.5rem
+					color: white
+					font-size: 2rem
+					padding-left: 1.5rem
+					padding-right: 1.5rem
 		.banner
 			img
 				max-width: 100%
@@ -199,6 +215,7 @@
 					transform: translateX(-50%)
 			p
 				font-weight: bold
+
 	.fb-2
 		figure
 			img
@@ -212,8 +229,15 @@
 				text-align: center
 				h4
 					font-weight: bold
-					&:hover 
-						color: white
+			+media-breakpoint-up(sm)
+				&:hover
+					figcaption
+						h4
+							color: white
+						p
+							-webkit-box-shadow: 0px 6px 0px 0px rgba(0,0,0,0.75)
+							-moz-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.75)
+							box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.75)
 .home-bonus
 	margin-top: 2rem
 	img
